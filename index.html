@@ -1,1 +1,66 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝒯Control de Ciber</title>
+
+
+  <!-- Icono de la pastaña  -->
+  <link rel="shortcut icon" href="control-de-ciber-cliente.png">
+
+<!--estilos de la pagina-->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+</head>
+
+<body>
+
+
+  <img class="logo"src="control-de-ciber-cliente.gif" alt="">
+  <img src="xyz.png" class="xyz" alt="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quidem totam aliquam maiores eius laborum temporibus repellat odit explicabo! Adipisci nulla nam blanditiis amet tempora veniam itaque maiores unde dolorem?">
+  <!-- <h1>Última Sesión</h1>
+
+   -->
+  <div class="intrinsic-box">
+    <a-scene embedded>
+      <a-entity id="rig" movement-controls kinematic-body position="2.192 0 19.956">
+        <a-entity id="camera" camera position="0 2 0" look-controls cursor="rayOrigin: mouse"></a-entity>
+      </a-entity>
+      <a-assets>
+        <a-asset-item id="tree" src="./controlllo.gltf"></a-asset-item>
+        <img id="sky" src="aa.png">
+
+      </a-assets>
+
+      <a-entity animation="property: rotation; to: 0 360 0; dur: 10000; easing: linear; loop: true" position="1.567 0 0"
+        id="mario" scale="2 2 2" gltf-model="#tree"></a-entity>
+
+      <a-light type="ambient" intensity="1.2s"></a-light>
+      <a-light type="point" position="-7.504 5.560 -5.006"
+        light="intensity:  3.61;  color:  #1fcee5;  groundColor:  #0ee174;  decay:  1.93;  penumbra:  1;  shadowBias:  0.49;  shadowCameraFar:  501.21;  shadowCameraBottom:  -4.79">
+      </a-light>
+      <a-light type="point" position="0 3.624 3.708"
+        light="intensity:  3.61;  color:  #1fcee5;  groundColor:  #0ee174;  decay:  1.93;  penumbra:  1;  shadowBias:  0.49;  shadowCameraFar:  501.21;  shadowCameraBottom:  -4.79">
+      </a-light>
+
+
+
+      <a-sky src="#sky" animation="property: rotation; to: 0 360 0; dur: 60000; easing: linear; loop: true"></a-sky>
+
+
+
+    </a-scene>
+  </div>
+
+
+
+
+</body>
+
+</html>
